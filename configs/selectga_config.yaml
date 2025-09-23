@@ -1,0 +1,45 @@
+# Configuration file for select_ga, inference.py, and train.py
+
+# General settings
+project_name: "GA_Estimation_Project"
+output_dir: "./outputs"
+random_seed: 42
+
+# Data settings
+data:
+  train_data_path: "./data/train.csv"
+  val_data_path: "./data/val.csv"
+  test_data_path: "./data/test.csv"
+  batch_size: 32
+  num_workers: 4
+
+# Model settings
+model:
+  name: "resnet18"
+  pretrained: true
+  num_classes: 1
+
+# Training settings
+train:
+  epochs: 50
+  learning_rate: 0.001
+  optimizer: "adam"
+  loss_function: "mse"
+  checkpoint_path: "./checkpoints/best_model.pth"
+  early_stopping_patience: 10
+
+# Inference settings
+inference:
+  model_path: "./checkpoints/best_model.pth"
+  input_data_path: "./data/test.csv"
+  output_predictions_path: "./outputs/predictions.csv"
+
+# Genetic Algorithm (GA) selection settings
+select_ga:
+  population_size: 20
+  generations: 30
+  mutation_rate: 0.05
+  crossover_rate: 0.8
+  selection_method: "tournament"
+  tournament_size: 3
+  ga_output_path: "./outputs/ga_selection_results.json"
