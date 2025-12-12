@@ -187,7 +187,7 @@ GA_predictor: [https://drive.google.com/file/d/1MT769lm2wxO6VowVOXvAjCZLueURo8sY
 SelectGA addresses critical challenges in global healthcare:
 
 - **Accessibility**: Enables GA estimation with minimal training data requirements
-- **Resource Efficiency**: Reduces computational demands while improving accuracy
+- **Resource Efficiency**: Reduces computational demands during training while improving accuracy
 - **Clinical Relevance**: Achieves clinically acceptable accuracy thresholds
 - **Scalability**: Framework designed for deployment in low-resource settings
 
@@ -218,13 +218,8 @@ For questions about the code or collaboration opportunities:
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Creative Commons License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- Research conducted across multiple international healthcare centers
-- Special thanks to healthcare workers and patients who participated in data collection
-- Built upon open-source contributions from the computer vision and medical AI communities
 
 ## ⚠️ Important Notes
 
